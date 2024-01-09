@@ -96,9 +96,24 @@ section:nth-of-type(2) .img {
     /* test */
 }
 section:nth-of-type(3) .card {
-    height: 500px;
     background-color: #9792E4;
     margin-bottom: 25px;
+    padding: 10px 10px;
+
+    flex-direction: column;
+    gap: 25px;
+}
+
+section:nth-of-type(3) .card .img {
+    height: 190px;
+    border: 2px dashed red;
+    /* test */
+}
+
+section:nth-of-type(3) .card .text {
+    height: 210px;
+    border: 2px dashed red;
+    /* test */
 }
 /* fine terza section */
 
@@ -133,7 +148,7 @@ section:nth-of-type(5) .cards {
 }
 
 section:nth-of-type(5) .card:nth-of-type(2) {
-    
+
     height: 400px;
     border: 2px dashed red;
     /* test */
@@ -157,3 +172,67 @@ section:nth-of-type(5) .card:nth-of-type(2) {
 }
 /* fine footer */
 
+
+
+/* media query tablet  */
+@media screen and (min-width: 768px) {
+    
+    /* prima section */
+    section:nth-of-type(1) .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+    
+    section:nth-of-type(1) .card {
+        width: calc(100% / 3 - 25px / 3 * 2);
+    }
+
+    section:nth-of-type(1) .card:nth-of-type(1) {
+        width: calc(100% - (100% / 3 - 25px / 3 * 2) - 25px);
+    }
+
+    section:nth-of-type(1) .card:nth-of-type(2) {
+        height: 720px;
+        /* test */
+    }
+    /* fine prima section */
+
+    /* terza section */
+    section:nth-of-type(3) .card {
+        flex-direction: row;
+    }
+
+    section:nth-of-type(3) .card .img {
+        width: 30%;
+    }
+
+    section:nth-of-type(3) .card .text {
+        width: 70%;
+    }
+    /* fine terza section */
+
+    /* quarta section */
+    section:nth-of-type(4) .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    section:nth-of-type(4) .card {
+        width: calc(100% / 2 - 25px / 2);
+    }
+    /* fine quarta section */
+
+    /* quinta section */
+    section:nth-of-type(5) .cards {
+        flex-direction: row;
+    }
+
+    section:nth-of-type(5) .card {
+        width: calc(100% / 2 - 25px)
+    }
+    /* fine quinta section */
+
+
+}
+/* fine media query tablet  */
