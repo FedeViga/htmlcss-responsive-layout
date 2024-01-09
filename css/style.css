@@ -18,6 +18,14 @@
 section {
     padding: 60px 0px;
 }
+
+.br-small {
+    border-radius: 15px;
+}
+
+.br-big {
+    border-radius: 30px;
+}
 /* fine common */
 
 
@@ -36,19 +44,19 @@ nav {
 
 
 /* prima section  */
-.cards {
+section:nth-of-type(1) .cards {
     flex-direction: column;
     gap: 25px;
 }
 
-.card {
+section:nth-of-type(1) .card {
     background-color: #B5DDFF;
 
     height: 360px;
     /* test */
 }
 
-.card:nth-of-type(1) {
+section:nth-of-type(1) .card:nth-of-type(1) {
     height: 720px;
 }
 /* fine prima section  */
@@ -75,3 +83,20 @@ section:nth-of-type(2) .img {
     background-color: white;
     /* test */
 }
+/* fine seconda section */
+
+
+/* terza section */
+.testimonials {
+    height: 200px;
+    margin-bottom: 50px;
+
+    background-color: #9792E4;
+    /* test */
+}
+section:nth-of-type(3) .card {
+    height: 500px;
+    background-color: #9792E4;
+    margin-bottom: 25px;
+}
+/* fine terza section */
