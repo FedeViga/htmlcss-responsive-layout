@@ -26,6 +26,16 @@ section {
 .br-big {
     border-radius: 30px;
 }
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+.container-small {
+    max-width: 890px;
+    margin: auto;
+}
 /* fine common */
 
 
@@ -37,8 +47,14 @@ nav {
     height: 75px; 
     /* test */
 
+}
+
+.container {
     justify-content: space-between;
-    align-items: center;
+}
+
+.links {
+    display: none;
 }
 /* fine nav */
 
@@ -65,12 +81,14 @@ section:nth-of-type(1) .card:nth-of-type(1) {
 /* seconda section  */
 section:nth-of-type(2) {
     background-color: #9792E4;
+}
+
+.container-small {  
     flex-direction: column;
     gap: 25px;
 }
 
 section:nth-of-type(2) .img {
-    width: 100%;
     margin-bottom: 25px;
 
     height: 300px;
@@ -228,11 +246,68 @@ section:nth-of-type(5) .card:nth-of-type(2) {
         flex-direction: row;
     }
 
-    section:nth-of-type(5) .card {
-        width: calc(100% / 2 - 25px)
+    section:nth-of-type(5) .card:nth-of-type(1) {
+        max-width: 70%;
+    }
+
+    section:nth-of-type(5) .card:nth-of-type(2) {
+        flex-grow: 1;
     }
     /* fine quinta section */
 
 
 }
 /* fine media query tablet  */
+
+
+/* media query laptop */
+@media screen and (min-width: 992px) {
+
+    /* nav */
+    .links {
+        display: block;
+    }
+
+    .links .button {
+        display: inline-block;
+    }
+
+    .menu {
+        display: none;
+    }
+    /* fine nav */
+
+    /* prima section */
+    section:nth-of-type(1) .card:nth-of-type(1),
+    section:nth-of-type(1) .card:nth-of-type(2) {
+
+        height: 360px;
+        /* test */
+    }
+    /* fine prima section */
+
+    /* seconda section */
+    .container-small {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    section:nth-of-type(2) .plan {
+        width: 50%;
+    }
+
+    section:nth-of-type(2) .development {
+        width: 50%;
+    }
+    /* fine seconda section */
+
+    /* quarta section */
+    section:nth-of-type(4) .card {
+        width: calc(100% / 3 - 25px / 3 * 2);
+    }
+    /* fine quarta section */
+
+
+}
+/* fine media query laptop */
+
