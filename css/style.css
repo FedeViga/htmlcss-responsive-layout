@@ -13,6 +13,10 @@
 .padding-0-34 {
     padding: 0 34px;
 }
+
+section {
+    margin-bottom: 80px;
+}
 /* fine common */
 
 
@@ -30,3 +34,19 @@ nav {
 }
 /* fine nav */
 
+/* prima section  */
+.cards {
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card {
+    background-color: #B5DDFF;
+
+    height: 360px;
+    /* test */
+}
+
+.card:nth-of-type(1) {
+    height: 720px;
+}
