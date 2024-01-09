@@ -3,5 +3,30 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 /* reset */
+
+/* common */
+.flex {
+    display: flex;
+}
+
+.padding-0-34 {
+    padding: 0 34px;
+}
+/* fine common */
+
+
+/* nav */
+nav {
+    background-color: #0084FD;
+    color: white;
+    
+    height: 75px; 
+    /* test */
+
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+/* fine nav */
+
