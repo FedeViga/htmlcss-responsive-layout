@@ -47,12 +47,19 @@ section {
 nav {
     background-color: #0084FD;
     color: white;
-    
-    height: 75px; 
-    /* test */
+    position: fixed;
+    width: 100%;
 
 }
 
+.logo {
+    padding: 15px 0px;
+}
+
+.menu {
+    font-size: 24px;
+    align-items: center;
+}
 .container {
     justify-content: space-between;
 }
@@ -64,6 +71,9 @@ nav {
 
 
 /* prima section  */
+section:nth-of-type(1) {
+    padding-top: calc(74px + 48px);
+}
 section:nth-of-type(1) .cards {
     flex-direction: column;
     gap: 25px;
