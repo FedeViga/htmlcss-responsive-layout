@@ -237,6 +237,7 @@ section:nth-of-type(4) {
 section:nth-of-type(4) h2 {
     color: white;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 section:nth-of-type(4) .cards {
@@ -246,9 +247,28 @@ section:nth-of-type(4) .cards {
 
 section:nth-of-type(4) .card {
     background-color: white;
+    padding: 40px 25px;
+}
 
-    height: 400px;
-    /* test */
+section:nth-of-type(4) .card strong{
+    font-size: 50px;
+    color: #9792E4;
+}
+
+section:nth-of-type(4) .card h3{
+    color: #9792E4;
+}
+
+section:nth-of-type(4) .card p {
+    margin-bottom: 40px;
+}
+
+.button-violet {
+    background-color: #9792E4;
+    color: white;
+    padding: 12px 45px;
+    text-decoration: none;
+    border-radius: 22px;
 }
 /* fine quarta section */
 
