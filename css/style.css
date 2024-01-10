@@ -6,6 +6,10 @@
 /* reset */
 
 /* common */
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
 .flex {
     display: flex;
 }
