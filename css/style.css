@@ -54,6 +54,7 @@ nav {
     color: white;
     position: fixed;
     width: 100%;
+    z-index: 10;
 
 }
 
@@ -206,6 +207,7 @@ section:nth-of-type(3) .card {
 .img-container {
     padding: 0px 30px;
 }
+
 section:nth-of-type(3) .card .img {
     width: calc(100vw - 60px - 60px - 60px);  /* padding card, padding img-container e padding section */
     height: calc(100vw - 60px - 60px - 60px);  /* padding card, padding img-container e padding section */
@@ -276,14 +278,53 @@ section:nth-of-type(4) .card p {
 /* quinta section  */
 section:nth-of-type(5) .cards {
     flex-direction: column;
-    gap: 25px;
 }
 
-section:nth-of-type(5) .card:nth-of-type(2) {
+section:nth-of-type(5) h2 {
+    color: #9792E4;
+}
 
-    height: 400px;
-    border: 2px dashed red;
-    /* test */
+section:nth-of-type(5) p {
+    margin-bottom: 25px;
+}
+
+.img-container-2 {
+    position: relative;
+    width: 50vw;
+    margin-bottom: 25px;
+}
+
+section:nth-of-type(5) .card .img {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+section:nth-of-type(5) .card .img .fa-solid {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    font-size: 58px;
+    color: #9792E4;
+}
+
+section:nth-of-type(5) .card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+section:nth-of-type(5) h3 {
+    color: #9792E4;
+}
+
+section:nth-of-type(5) .button-violet {
+    padding: 5px 10px;
+}
+
+section:nth-of-type(5) .fa-linkedin {
+    margin-right: 10px;
 }
 /* fine quinta section  */
 
