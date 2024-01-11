@@ -117,10 +117,13 @@ section:nth-of-type(1) .card:nth-of-type(1) p {
     color: white;
 }
 
-.button-blue a {
+section:nth-of-type(1) .card:nth-of-type(1) .img {
+    justify-content: center;
 }
+
 section:nth-of-type(1) .card:nth-of-type(1) img {
     width: 100%;
+    max-width: 300px;
 }
 /* fine prima section  */
 
@@ -180,7 +183,6 @@ section:nth-of-type(2) .text p {
 
 /* terza section */
 .testimonials {
-    height: 300px;
     margin-bottom: 50px;
 }
 
@@ -400,8 +402,9 @@ footer {
         text-align: center;
     }
 
-    section:nth-of-type(1) img {
-        width: 50%;
+    section:nth-of-type(1) .img {
+        width: 60%;
+
     }
     /* fine prima section */
 
@@ -483,11 +486,21 @@ footer {
 
     /* nav */
     .links {
-        display: block;
+        display: flex;
+        align-items: center;
+        gap: 25px;
     }
 
+    .links a {
+        text-decoration: none;
+        color: white;
+    }
     .links .button {
         display: inline-block;
+        background-color: white;
+        color: black;
+        padding: 10px 15px;
+        border-radius: 20px;
     }
 
     .menu {
@@ -496,11 +509,20 @@ footer {
     /* fine nav */
 
     /* prima section */
-    section:nth-of-type(1) .card:nth-of-type(1),
-    section:nth-of-type(1) .card:nth-of-type(2) {
+    section:nth-of-type(1) .card.flex {
+        flex-direction: row;
+    }
 
-        height: 360px;
-        /* test */
+    section:nth-of-type(1) .card.flex .text {
+        width: 60%;
+    }
+
+    .button-blue {
+        width: auto;
+    }
+
+    section:nth-of-type(1) .card.flex img {
+        object-fit: cover;
     }
     /* fine prima section */
 
@@ -519,12 +541,33 @@ footer {
     }
     /* fine seconda section */
 
+    /* terza section */
+    section:nth-of-type(3) .card .img {
+        width: 250px;
+        height: 250px;
+    }
+    /* fine terza section */
+
     /* quarta section */
     section:nth-of-type(4) .card {
         width: calc(100% / 3 - 25px / 3 * 2);
     }
     /* fine quarta section */
 
+    /* quinta section */
+    section:nth-of-type(5) .card:nth-of-type(2) {
+        width: 250px;
+    }
+
+    section:nth-of-type(5) .card .img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .img-container-2 {
+        width: auto;
+    }
+    /* fine quinta section */
 
 }
 /* fine media query laptop */
